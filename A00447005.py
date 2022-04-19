@@ -11,7 +11,7 @@ currency = st.radio(
 
 BASE_URL = "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency="
 
-API_URL = BASE_URL + currency +"&days=" + str(no_of_days)+"&interval=daily"
+API_URL = BASE_URL + currency +"&days=" + str(days)+"&interval=daily"
 
 #GET DATA 
 req = requests.get(API_URL)
